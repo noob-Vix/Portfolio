@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Your Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="logo-and-nav">
+            <h2>Portfolio</h2>
+            <button class="mobile-menu-button">☰</button>
+            <nav class="nav-buttons">
+                <button class="nav-button" data-section="home">Home</button>
+                <button class="nav-button" data-section="about">About</button>
+                <button class="nav-button" data-section="skills">Skills</button>
+                <button class="nav-button" data-section="projects">Projects</button>
+            </nav>
+        </div>
+        <label class="switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+        </label>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Hello, I'm <span style="color: var(--primary-color)">Mark</span></h1>
+        <p>A passionate developer creating amazing digital experiences</p>
+        <div class="social-links">
+            <a href="https://github.com/noob-Vix" aria-label="GitHub">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/%E5%B5%90markian-fernandez-539234328/" aria-label="LinkedIn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+            </a>
+            <a href="rinkashimetoki@gmail.com" aria-label="Email">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+            </a>
+        </div>
+        <div class="scroll-indicator">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+        </div>
+    </section>
+
+    <section id ="about" class="about">
+        <div class="profile-pic">
+            <img src="images/hackerist.jpg" alt="Your Name">
+        </div>
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>Hello! I'm a passionate <span class="highlight">full-stack developer</span> based in Philippines. With 1 years of experience in app development, I specialize in creating responsive and user-friendly applications that solve real-world problems.</p>
+            
+            <p>My journey in tech began when i'm still in highschool. Since then, I've worked on various projects ranging from software applications to web applications. I'm particularly passionate about software application specially video games ;).</p>
+            
+            <p>When I'm not coding, you can find me at <a href="https://www.facebook.com/mark.ian.fernandez.2024">facebook</a>. I believe in "hard work will get paid one day" and am always excited to take on new challenges and learn new technologies.</p>
+            
+            <p>Currently, I'm still a beginner and looking for opportunities to work on projects that enchance my skills.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">📱</div>
+                <h3>App Development</h3>
+                <p>Proficient in Flutter, Dart, and modern app technologies</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">💻</div>
+                <h3>Web Development</h3>
+                <p>Proficient in HTML, CSS, JavaScript, and modern web technologies</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🎨</div>
+                <h3>UI/UX Design</h3>
+                <p>Creating beautiful and intuitive user interfaces</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🔧</div>
+                <h3>Backend Development</h3>
+                <p>Experience with databases and server architecture</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3>Qr Attendance</h3>
+                    <p>A QR-based attendance system that allows students and teachers to sign up and manage attendance efficiently. Students receive a unique QR code upon registration, which they can view in their dashboard. Teachers can scan these QR codes to mark attendance, with all records stored securely in a MySQL database. This system ensures quick, accurate, and hassle-free attendance tracking.</p>
+                    <a href="https://github.com/noob-Vix/qr_attendance" class="btn">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3>Ecommerc App</h3>
+                    <p>A feature-rich e-commerce app that enables users to browse products, add items to their cart, and complete secure purchases. The app includes user authentication, product categories, search functionality, order tracking, and payment integration. Admins can manage inventory, process orders, and track sales. Built for a seamless shopping experience, the app ensures smooth navigation and secure transactions.</p>
+                    <a href="https://github.com/noob-Vix/second_capstone_flutter" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Mark. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
